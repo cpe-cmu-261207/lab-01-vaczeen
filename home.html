@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume Website</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        button {
+            padding: 20px 50px;
+            font-size: 1.5;
+            cursor: pointer;
+            border: 0px;
+            background: transparent;
+            position: relative;
+            margin: 20px;
+            transition: all 0.25s ease;
+        }
+
+        .btn-1 {
+            background: rgb(240, 167, 9);
+            color: rgb(0, 0, 0);
+            border-radius: 30px;
+            transition: all 0.25s ease;
+        }
+
+        .btn-1:hover {
+            transform: translate(-12px, -12px);
+        }
+
+        .btn-1:hover::before {
+            transform: translate(12px, 12px);
+        }
+
+        .btn-1:hover::after {
+            transform: translate(6px, 6px);
+        }
+
+        .btn-1::after,
+        .btn-1::before {
+            content: "";
+            position: absolute;
+            opacity: 0.3;
+            border-radius: inherit;
+            background: rgb(240, 167, 9);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: all 0.25s esea;
+        }
+        img{
+            max-width:100%;
+            width:500px
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div class="container mx-auto">
+        <div class="box p-6 mt-5 rounded-lg bg-center bg-gray-600 border-8 border-yellow-500">
+            <div class="bg-gray-600 ">
+                <p class="font-medium text-5xl text-left text-white">My
+                    resume</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-20">
+        <button class="btn-1 text-2xl">
+            <a href="file:///C:/Users/WIN%2010/Desktop/lab1/lab-01-vaczeen/home.html">Home</a>
+        </button>
+        <button class="btn-1 text-2xl">
+            <a href="file:///C:/Users/WIN%2010/Desktop/lab1/lab-01-vaczeen/experience.html">Experience</a>
+        </button>
+        <button class="btn-1 text-2xl">
+            <a href="file:///C:/Users/WIN%2010/Desktop/lab1/lab-01-vaczeen/contact.html">Contact</a>
+        </button>
+    </div>
+    <div class="container mx-auto">
+        <div class="box p-6 mt-5 rounded-lg bg-center bg-gray-600 border-8 border-yellow-500">
+            <div class="bg-gray-600 ">
+                <p class="font-medium text-xl text-left text-white"></p>
+                
+                <div class="space-y-4"> 
+                    <div class="bg-white max-w-screeen-md mx-auto flex p-4 shadow-lg rounded-xl-ring-1 ring-gray-300">
+                        <div class="flex p-4">
+                            <img class="w-24 h-24 rounded-full" scr="zeen.jpg"> 
+                        <div class="p-4">
+                            <p class="font-semibold text-3xl"> Metis Guntavee</p>
+                            <p class="text-sm text-gray-600">Hi.My name is Metis Guntavee.I studying in chiangmai University.Studies Computer Engineering.I love Basketball.My Hobby is play guitar and sing a song</p>
+                            <p class="font-semibold mt-10 text-3xl">My Skill</p>  
+                            <p class="text-sm text-gray-600">write C++,Java</p> 
+                          
+                                     
+                        </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
