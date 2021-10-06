@@ -2,105 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        button {
-            padding: 20px 50px;
-            font-size: 1.5;
-            cursor: pointer;
-            border: 0px;
-            background: transparent;
-            position: relative;
-            margin: 20px;
-            transition: all 0.25s ease;
-        }
-
-        .btn-1 {
-            background: rgb(240, 167, 9);
-            color: rgb(0, 0, 0);
-            border-radius: 30px;
-            transition: all 0.25s ease;
-        }
-
-        .btn-1:hover {
-            transform: translate(-12px, -12px);
-        }
-
-        .btn-1:hover::before {
-            transform: translate(12px, 12px);
-        }
-
-        .btn-1:hover::after {
-            transform: translate(6px, 6px);
-        }
-
-        .btn-1::after,
-        .btn-1::before {
-            content: "";
-            position: absolute;
-            opacity: 0.3;
-            border-radius: inherit;
-            background: rgb(240, 167, 9);
-            width: 100%;
-            height: 100%;
-            left: 0;
-            bottom: 0;
-            z-index: -1;
-            transition: all 0.25s esea;
-        }
-        img{
-            max-width:100%;
-            width:500px
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume Website</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
-//web Home1
 
-<body class="bg-black">
-    <div class="container mx-auto">
-        <div class="box p-6 mt-5 rounded-lg bg-center bg-gray-600 border-8 border-yellow-500">
-            <div class="bg-gray-600 ">
-                <p class="font-medium text-5xl text-left text-white">My
-                    resume</p>
-            </div>
-        </div>
+<body class="= select-none bg-cover bg-no-repeat" style="background-image: url(img/bg.jpg) ">
+ 
+   
+ <!-- navbar -->
+ <div class="justify-center max-w-auto mt-12 p-4 h-10 mb-24 flex bg-no-repeat bg-cover" >
+  <p class="pl-10 -mt-4 h-4 text-4xl text-red" style="font-family:Quicksand, sans-serif">My resume</p>
+</div>
+<div class="flex justify-center flex-row space-x-10 mx-4 ml-50 -mt-14">
+  <a href="home.html"><button
+      class="transition duration-500 ease-in-out bg-green-700 text-white hover:text-black transform -translate-y-1 scale-110 rounded-lg p-2 shadow-lg">
+      <p style="font-family: Quicksand, sans-serif" class="text-4xl"> Home </p>
+    </button></a>
+
+  <a href="experience.html"><button
+      class="transition duration-500 ease-in-out bg-green-700 text-white hover:text-black transform -translate-y-1 scale-110 rounded-lg p-2 shadow-lg">
+      <p style="font-family: Quicksand, sans-serif" class="text-4xl"> Experience </p>
+    </button></a>
+
+  <a href="contact.html"><button
+      class="transition duration-500 ease-in-out bg-green-700 text-white hover:text-black transform -translate-y-1 scale-110 rounded-lg p-2 shadow-lg">
+      <p style="font-family: Quicksand, sans-serif" class="text-4xl"> Contact </p>
+    </button></a>
+</div>
+  
+
+  
+  <div class="mx-auto bg-white rounded-xl shadow-2xl flex max-w-5xl mt-8 font-serif">
+    <img class="flex-shrink-0 rounded-l-xl" src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t1.6435-9/177210838_1968324343319062_2720064708235080684_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=vvGazN7u-Y8AX9M23-u&_nc_ht=scontent.fcnx3-1.fna&oh=3c2dbf4b282c63e11ad307009270573a&oe=6183EEAD" width="350" height="350">
+    <div class="p-8">
+      <br>
+      <p class="text-yellow-400">Hello My name is</p><br>
+      <p class="text-6xl tracking-wide text-green-700 " style="font-family:Quicksand, sans-serif">Metis Guntavee
+      </p><br>
+      <p class="mt-4">I am studying Computer Engineering at
+        Chiang Mai University.<br>
+        I like to play game and I can play a guitar with sing a song together .<br>
+        I interested web developer Because I would like to develop application.
+      </p>
     </div>
-    <div class="text-center mt-20">
-        <button class="btn-1 text-2xl">
-            <a href="file:///C:/Users/WIN%2010/Desktop/lab1/lab-01-vaczeen/home.html">Home</a>
-        </button>
-        <button class="btn-1 text-2xl">
-            <a href="file:///C:/Users/WIN%2010/Desktop/lab1/lab-01-vaczeen/experience.html">Experience</a>
-        </button>
-        <button class="btn-1 text-2xl">
-            <a href="file:///C:/Users/WIN%2010/Desktop/lab1/lab-01-vaczeen/contact.html">Contact</a>
-        </button>
+  </div>
+  
+  <div class="flex justify-evenly overflow-hidden font-serif">
+    
+    <div
+      class="bg-pink-50 rounded-xl shadow-2xl mt-8 mb-16 p-8 text-black">
+      <p class="text-3xl text-pink-700" style="font-family:Quicksand, sans-serif">Computer skills</p>
+      <img class="m-4"  width="700">
+      <li>C++</li>
+      <li>JavaScript</li>
+      <li>Photoshop</li>
+      <li>SQLite</li>
     </div>
-    <div class="container mx-auto">
-        <div class="box p-6 mt-5 rounded-lg bg-center bg-gray-600 border-8 border-yellow-500">
-            <div class="bg-gray-600 ">
-                <p class="font-medium text-xl text-left text-white"></p>
-                
-                <div class="space-y-4"> 
-                    <div class="bg-white max-w-screeen-md mx-auto flex p-4 shadow-lg rounded-xl-ring-1 ring-gray-300">
-                        <div class="flex p-4">
-                            <img class="w-24 h-24 rounded-full" scr="zeen.jpg"> 
-                        <div class="p-4">
-                            <p class="font-semibold text-3xl"> Metis Guntavee</p>
-                            <p class="text-sm text-gray-600">Hi.My name is Metis Guntavee.I studying in chiangmai University.Studies Computer Engineering.I love Basketball.My Hobby is play guitar and sing a song</p>
-                            <p class="font-semibold mt-10 text-3xl">My Skill</p>  
-                            <p class="text-sm text-gray-600">write C++,Java</p> 
-                          
-                                     
-                        </div>
-                        </div>
-            </div>
-        </div>
+  </div>
+  <div class="flex justify-evenly overflow-hidden font-serif">
+    <div
+      class="bg-yellow-100 rounded-xl shadow-2xl mt-8 mb-16 p-8 text-black ">
+      <p class="text-3xl text-yellow-700" style="font-family:Quicksand, sans-serif">Hobbies</p>
+      <img class="m-4 " width="700">
+      <li>Traveling</li>
+      <li>Cooking</li>
+      <li>Gaming</li>
+      <li>Sing a song</li>
+      <li>Play Guitar</li>
+      <li>Basketball</li>
     </div>
+  </div>
+
 </body>
 
 </html>
